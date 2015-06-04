@@ -87,6 +87,10 @@ webhook endpoint.
 ```
 $ irb
 > require './examples/random_number_generator'
+=> true
+> 3.times do
+>   RandomNumberGenerator.new.generate
+> end
 POST request made to http://localhost:9000
 Payload:
 {"id":"610e96e5-c504-45a9-b5c7-8b0e4c3c2585","event":"random_number:generate","data":2}

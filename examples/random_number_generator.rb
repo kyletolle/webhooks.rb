@@ -14,6 +14,3 @@ class RandomNumberGenerator
   end
 end
 
-3.times do
-  RandomNumberGenerator.new.generate
-end
