@@ -20,7 +20,22 @@ You're ready to go as long as you have Ruby installed!
 
 ## Events
 
-The webhook requests are HTTP POST requests to the webhook severs
+The webhook requests are HTTP POST requests to the webhook severs. The POST
+includes a payload, which is a JSON-encoded string.
+
+The format is something like:
+
+```
+{
+  "id":    "610e96e5-c504-45a9-b5c7-8b0e4c3c2585",
+  "event": "random_number:generate",
+  "data":  2
+}
+```
+
+- `id`: UUID for this event.
+- `event`: Resource name and event type which triggered the event.
+- `data`: Data for this event.
 
 ## Examples
 
@@ -31,7 +46,7 @@ The examples below assumes a single endpoint running at `http://localhost:9000`.
 
 I recommend [Polis.rb](https://github.com/kyletolle/polis.rb).
 
-## Example 1
+### Barebones
 
 Sometimes it's just easier to see an example.
 
@@ -52,7 +67,7 @@ end
 ```
 
 Then we can create a new `Test` object, call `#go`, and see the response from
-the webhook endpoint (assuming it was running).
+the webhook endpoint.
 
 ```
 >Test.new.go
@@ -64,7 +79,7 @@ Response:
 
 ```
 
-## Example 2
+### Random Number Generator
 
 There's an example included in the repo to send 3 random numbers to the
 webhook endpoint.
