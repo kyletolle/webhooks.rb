@@ -8,7 +8,7 @@ class RandomNumberGenerator
   end
 
   def generate
-    random_number = SecureRandom.random_number(10)
+    random_number = SecureRandom.random_number(1000)
 
     send_webhooks(:random_number, :generate, random_number)
   end
