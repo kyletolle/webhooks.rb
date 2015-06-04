@@ -2,7 +2,7 @@
 
 A small library to demonstrate adding webhooks to Plain Ol' Ruby Objects.
 
-Only uses classes from the Ruby's Standard Library.
+Only uses classes from Ruby's Standard Library.
 
 Tested with Ruby 2.2.0.
 
