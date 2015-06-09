@@ -112,6 +112,17 @@ Response:
 => true
 ```
 
+### Random Number Button
+
+There's a small [Sinatra](http://www.sinatrarb.com/) app in
+`examples/random_number_button`.
+
+You can use it to have a web UI to trigger generating a random number, and
+then sending a webhook. With the [right webhook endpoint](https://github.com/kyletolle/random_number_texter), you'll send a text message with the random number.
+
+See the README in that directory for details.
+
+
 ## License
 
 MIT
