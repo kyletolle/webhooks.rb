@@ -3,8 +3,8 @@ require_relative '../lib/webhooks'
 class RandomNumberGenerator
   include Webhooks
 
-  def webhooks
-    %w{http://localhost:9000}
+  def initialize
+    self.webhooks = %w{http://localhost:9000}
   end
 
   def generate
