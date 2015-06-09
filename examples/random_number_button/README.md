@@ -35,3 +35,15 @@ Press the button to generate a random number between 0 and 999. A webhook will
 be send to the endpoint mentioned above. Assuming all's well, a text message
 will be sent to that number with the random number!
 
+## Customizing the port
+
+This runs on port `9090` by default. Set the `PORT` environment variable to
+override it.
+
+```
+PORT=5000 bundle exec foreman start
+```
+
+Note: You can use [dotenv's](https://github.com/bkeepers/dotenv) `.env` file
+to store that value too.
+
