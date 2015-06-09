@@ -5,4 +5,5 @@ gem 'sinatra',     '~> 1.4.6'
 gem 'foreman',     '~> 0.78.0'
 gem 'rake',        '~> 10.4.2'
 gem 'fastenv',     '~> 0.0.2'
+gem 'dotenv'
 
