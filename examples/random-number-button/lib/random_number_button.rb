@@ -35,6 +35,13 @@ class RandomNumberButton < Sinatra::Base
     HTML
   end
 
+  post '/' do
+    generator     = RandomNumberGenerator.new
+      .tap{|g| g.webhooks = %w{http://localhost:6000}}
+    random_number = generator.generate
+    redirect "/?num=#{random_number}"
+  end
+
   run! if app_file == $0
 end
 
