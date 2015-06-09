@@ -28,7 +28,7 @@ class RandomNumberButton < Sinatra::Base
 <h1>Send a Random Number in a Text Message</h1>
 #{number_sent_message}
 <form method="post" action="/">
-<button type="submit">Generate the Random Number and Text It!</button>
+<button type="submit">Generate a Random Number and Text It!</button>
 </form>
 </body>
 </html>
