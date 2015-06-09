@@ -3,9 +3,18 @@
 ## Install
 
 From within `examples/random-number-button` (where this README lives), you can
-install the gems
+install the gems.
 
-`bundle install --path=.bundle`
+```
+bundle install --path=.bundle
+```
+
+## Running
+
+```
+bundle exec foreman start
+```
+
 
 ## Setup
 
