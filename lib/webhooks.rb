@@ -3,6 +3,8 @@ require 'securerandom'
 require 'json'
 
 module Webhooks
+  attr_accessor :webhooks
+
   def send_webhooks(resource, action, data)
     event_type = "#{resource}:#{action}"
     payload    = JSON.generate({
